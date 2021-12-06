@@ -15,7 +15,7 @@ report 50020 "Sales - Invoice ITB"
         {
             DataItemTableView = SORTING("No.");
             RequestFilterFields = "No.", "Sell-to Customer No.", "No. Printed";
-            RequestFilterHeadingML = DAN = 'Bogført salgsfaktura',//
+            RequestFilterHeadingML = DAN = 'Bogført salgsfaktura',
                                      ENU = 'Posted Sales Invoice';
             column(No_SalesInvHdr; "No.")
             {
