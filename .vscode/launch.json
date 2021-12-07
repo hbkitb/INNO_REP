@@ -12,7 +12,7 @@
       "enableLongRunningSqlStatements": true,
       "enableSqlInformationDebugger": true,
       "tenant": "6ad9f306-ca65-4d9a-a53c-bb1a2e7769aa",
-      "schemaUpdateMode":"Synchronize",
+      "schemaUpdateMode": "ForceSync",   //"Synchronize",
       //"sandboxName": "Sandbox-200520"
       "environmentType": "Sandbox",
       "environmentName": "Sandbox-200520",
