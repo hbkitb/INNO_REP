@@ -1244,7 +1244,7 @@ report 50020 "Sales - Invoice ITB"
                             CLEAR(MessageLines);
                             MessageLines.SETRANGE(MessageLines."Table Name", MessageLines."Table Name"::"Standard Text");
                             MessageLines.SETRANGE(MessageLines."No.", MessageNo);
-                            MessageLines.DELETEALL;
+                            MessageLines.DELETEALL;//
 
                             CLEAR(ExtendedTextLine);
                             ExtendedTextLine.SETRANGE(ExtendedTextLine."Table Name", ExtendedTextLine."Table Name"::"Standard Text");
