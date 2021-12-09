@@ -15,7 +15,7 @@ report 50108 "Toldpos_Inno_New"
     {
         dataitem("Sales Invoice Header"; "Sales Invoice Header")
         {
-            DataItemTableView = SORTING("No.");//
+            DataItemTableView = SORTING("No.");
             RequestFilterFields = "No.", "Sell-to Customer No.", "No. Printed";
             RequestFilterHeading = 'Posted Sales Invoice';
 
