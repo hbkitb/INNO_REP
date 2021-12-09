@@ -2,10 +2,10 @@ report 50108 "Toldpos_Inno_New"
 {
     DefaultLayout = RDLC;
     RDLCLayout = 'REP/ToldPos_Inno_New.rdl'; //'./Layouts/50020 Sales - Invoice ITB.rdlc';
-    //Caption = 'Sales - Toldpos'; //
+    //Caption = 'Sales - Toldpos'; 
     CaptionML = DAN = 'Salg - faktura',
                 ENU = 'Sales - Invoice';
-    EnableHyperlinks = true;
+    EnableHyperlinks = true;//
     Permissions = TableData "Sales Shipment Buffer" = rimd;
     PreviewMode = PrintLayout;
     WordMergeDataItem = "Sales Invoice Header";
