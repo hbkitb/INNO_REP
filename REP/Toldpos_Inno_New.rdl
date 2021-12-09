@@ -1133,13 +1133,13 @@
                                     <Width>0.94513in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.8732in</Width>
+                                    <Width>1.42888in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.65in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.73384in</Width>
+                                    <Width>1.17816in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.85in</Width>
@@ -1158,7 +1158,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>="Tarif No.--"</Value>
+                                                    <Value>="Hs. Tarif No."</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>9pt</FontSize>
@@ -1290,7 +1290,7 @@
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Left</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
@@ -1424,7 +1424,7 @@
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style>
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Left</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
@@ -1437,6 +1437,7 @@
                                               <VerticalAlign>Bottom</VerticalAlign>
                                             </Style>
                                           </Textbox>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                     </TablixCells>
@@ -3100,7 +3101,7 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>5.12758cm</Top>
-            <Left>11.27861cm</Left>
+            <Left>10.15003cm</Left>
             <Height>0.38833cm</Height>
             <Width>1.651cm</Width>
             <ZIndex>15</ZIndex>
@@ -3135,7 +3136,7 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>5.97478cm</Top>
-            <Left>11.27861cm</Left>
+            <Left>10.15003cm</Left>
             <Height>0.38833cm</Height>
             <Width>1.651cm</Width>
             <ZIndex>16</ZIndex>
@@ -3170,7 +3171,7 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>5.5159cm</Top>
-            <Left>11.27861cm</Left>
+            <Left>10.15003cm</Left>
             <Height>0.38833cm</Height>
             <Width>1.651cm</Width>
             <ZIndex>17</ZIndex>
@@ -3205,7 +3206,7 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>6.43368cm</Top>
-            <Left>11.27861cm</Left>
+            <Left>10.15003cm</Left>
             <Height>0.38833cm</Height>
             <Width>1.651cm</Width>
             <ZIndex>18</ZIndex>
@@ -3240,7 +3241,7 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>6.82201cm</Top>
-            <Left>11.27861cm</Left>
+            <Left>10.15003cm</Left>
             <Height>0.38833cm</Height>
             <Width>1.651cm</Width>
             <ZIndex>19</ZIndex>
@@ -3275,7 +3276,7 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>7.2456cm</Top>
-            <Left>11.27861cm</Left>
+            <Left>10.15003cm</Left>
             <Height>0.38833cm</Height>
             <Width>1.651cm</Width>
             <ZIndex>20</ZIndex>
@@ -3310,9 +3311,9 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>5.12758cm</Top>
-            <Left>12.92961cm</Left>
+            <Left>12.06835cm</Left>
             <Height>0.38833cm</Height>
-            <Width>1.86395cm</Width>
+            <Width>2.72521cm</Width>
             <ZIndex>21</ZIndex>
             <Visibility>
               <Hidden>=Last(Fields!Toldpos01.Value) = ""</Hidden>
@@ -3345,9 +3346,9 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>5.97478cm</Top>
-            <Left>12.92961cm</Left>
+            <Left>12.06835cm</Left>
             <Height>0.38833cm</Height>
-            <Width>1.86395cm</Width>
+            <Width>2.72521cm</Width>
             <ZIndex>22</ZIndex>
             <Visibility>
               <Hidden>=Last(Fields!Toldpos03.Value) = ""</Hidden>
@@ -3380,9 +3381,9 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>5.5159cm</Top>
-            <Left>12.92961cm</Left>
+            <Left>12.06835cm</Left>
             <Height>0.38833cm</Height>
-            <Width>1.86395cm</Width>
+            <Width>2.72521cm</Width>
             <ZIndex>23</ZIndex>
             <Visibility>
               <Hidden>=Last(Fields!Toldpos02.Value) = ""</Hidden>
@@ -3415,9 +3416,9 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>6.43368cm</Top>
-            <Left>12.92961cm</Left>
+            <Left>12.06835cm</Left>
             <Height>0.38833cm</Height>
-            <Width>1.86395cm</Width>
+            <Width>2.72521cm</Width>
             <ZIndex>24</ZIndex>
             <Visibility>
               <Hidden>=Last(Fields!Toldpos04.Value) = ""</Hidden>
@@ -3450,9 +3451,9 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>6.82201cm</Top>
-            <Left>12.92961cm</Left>
+            <Left>12.06835cm</Left>
             <Height>0.38833cm</Height>
-            <Width>1.86395cm</Width>
+            <Width>2.72521cm</Width>
             <ZIndex>25</ZIndex>
             <Visibility>
               <Hidden>=Last(Fields!Toldpos05.Value) = ""</Hidden>
@@ -3485,9 +3486,9 @@ Cstr(Fields!ParamValue15.Value)
             </Paragraphs>
             <rd:DefaultName>Textbox58</rd:DefaultName>
             <Top>7.2456cm</Top>
-            <Left>12.92961cm</Left>
+            <Left>12.06835cm</Left>
             <Height>0.38833cm</Height>
-            <Width>1.86395cm</Width>
+            <Width>2.72521cm</Width>
             <ZIndex>26</ZIndex>
             <Visibility>
               <Hidden>=Last(Fields!Toldpos06.Value) = ""</Hidden>
