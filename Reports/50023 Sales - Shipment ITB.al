@@ -498,7 +498,7 @@ report 50023 "Sales - Shipment ITB"
                         column(PlacCopy_SalesShptLineCaption; PlacCopyCaptionLbl)
                         {
                         }
-                        //HBK / ITB - 211221                                            
+                        //HBK / ITB - 211221                          
 
 
                         dataitem(DimensionLoop2; Integer)
