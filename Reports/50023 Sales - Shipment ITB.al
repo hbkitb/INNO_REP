@@ -491,6 +491,15 @@ report 50023 "Sales - Shipment ITB"
                         { }
                         column(VariantCode; "Variant Code")
                         { }
+                        //HBK / ITB - 211221
+                        column(PlacCopy_SalesShpLine; PlacCopy)
+                        {
+                        }
+                        column(PlacCopy_SalesShptLineCaption; PlacCopyCaptionLbl)
+                        {
+                        }
+                        //HBK / ITB - 211221                                            
+
 
                         dataitem(DimensionLoop2; Integer)
                         {
@@ -1236,6 +1245,7 @@ report 50023 "Sales - Shipment ITB"
         LineDimensionsCaptionLbl: TextConst DAN = 'Linjedimensioner', DEU = 'Pos. Dimensionen', ENU = 'Line Dimensions';
         BilltoAddressCaptionLbl: TextConst DAN = 'Faktureringsadresse', DEU = 'Rechnungsaddresse', ENU = 'Bill-to Address';
         QuantityCaptionLbl: TextConst DAN = 'Antal', DEU = 'Menge', ENU = 'Quantity';
+        PlacCopyCaptionLbl: TextConst DAN = 'Placering', DEU = 'Lokation', ENU = 'Location';  //HBK / ITB - 211221
         SerialNoCaptionLbl: TextConst DAN = 'Serienr.', DEU = 'Serien-Nr.', ENU = 'Serial No.';
         LotNoCaptionLbl: TextConst DAN = 'Lotnr.', DEU = 'Los-Nr.', ENU = 'Lot No.';
         DescriptionCaptionLbl: TextConst DAN = 'Beskrivelse', DEU = 'Beschreibung', ENU = 'Description';
