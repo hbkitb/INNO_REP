@@ -528,6 +528,9 @@
         <Field Name="PaymentTermLines2">
           <DataField>PaymentTermLines2</DataField>
         </Field>
+        <Field Name="CustEAN">
+          <DataField>CustEAN</DataField>
+        </Field>
         <Field Name="DimText">
           <DataField>DimText</DataField>
         </Field>
@@ -6158,7 +6161,7 @@ Cstr(Fields!ParamValue15.Value)
                     <Paragraph>
                       <TextRuns>
                         <TextRun>
-                          <Value>=Code.GetData</Value>
+                          <Value>='EANnr.: + First(Fields!CustEAN.Value, "DataSet_Result")</Value>
                           <Style>
                             <FontStyle>Normal</FontStyle>
                             <FontFamily>Segoe UI</FontFamily>
@@ -6175,6 +6178,9 @@ Cstr(Fields!ParamValue15.Value)
                   <Height>11.5pt</Height>
                   <Width>8.65606cm</Width>
                   <ZIndex>8</ZIndex>
+                  <Visibility>
+                    <Hidden>=First(Fields!CustEAN.Value, "DataSet_Result")&lt;&gt;''</Hidden>
+                  </Visibility>
                   <Style>
                     <Border>
                       <Style>None</Style>
