@@ -523,6 +523,11 @@ report 50020 "Sales - Invoice ITB"
                     column(PaymentTermLines2; PaymentTermLines[2])
                     {
                     }
+                    //0701222 - HBK      
+                    column(CustEAN; CustEAN)
+                    {
+                    }
+                    //070122 - HBK
 
                     dataitem(DimensionLoop1; Integer)
                     {
@@ -1614,6 +1619,8 @@ report 50020 "Sales - Invoice ITB"
 
                 EANText := 'EAN No.';
 
+                CustEAN := Cust.GLN;  //HBK / ITB - 070122
+
                 IF Cust."VAT Registration No." = '' THEN
                     CustVatNoText := ''
                 ELSE
@@ -2102,6 +2109,7 @@ report 50020 "Sales - Invoice ITB"
         FeeIdx: Integer;
         FeeTab: array[10] of Text[50];
         FeeFound: Boolean;
+        CustEAN: CODE[13];  //HBK / ITB - 070122
 
         SellToAddr: array[8] of Text[50];
         InvoiceAddrCaption: TextConst DAN = 'Faktureringsadresse', DEU = 'Rechnungsadresse ', ENU = 'Invoice Address';
