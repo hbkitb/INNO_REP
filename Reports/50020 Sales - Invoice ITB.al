@@ -523,7 +523,7 @@ report 50020 "Sales - Invoice ITB"
                     column(PaymentTermLines2; PaymentTermLines[2])
                     {
                     }
-                    //0701222 - HBK      
+                    //0701222 - HBK
                     column(CustEAN; CustEAN)
                     {
                     }
