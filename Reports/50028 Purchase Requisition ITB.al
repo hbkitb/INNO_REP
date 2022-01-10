@@ -490,6 +490,11 @@ report 50028 "Purchase Requisition ITB"
                         column(No_PurchLine; PurchaseLineNo)
                         {
                         }
+                        //HBK - ITB//
+                        column(EANNr; EANNr)
+                        {
+                        }
+                        //HBK - ITB
                         column(Desc_PurchLine; "Purchase Line".Description)
                         {
                         }
@@ -678,6 +683,10 @@ report 50028 "Purchase Requisition ITB"
                         }
 
                         trigger OnAfterGetRecord();
+
+                        var
+                            EanItem: Record Item;  //HBK / ITB - 100122
+
                         begin
                             IF Number = 1 THEN
                                 PurchLine.FIND('-')
@@ -755,6 +764,9 @@ report 50028 "Purchase Requisition ITB"
                                     TextLineIdx += 1;
                                     TextLine[TextLineIdx] := ParamText[ParamIdx];
                                 END;
+
+                                if EanItem.Get("Purchase Line"."No.") then
+                                    EANNr := EanItem.GTIN;   //HBK / ITB - 100122
 
                             END;
 
@@ -1592,6 +1604,7 @@ report 50028 "Purchase Requisition ITB"
         TextLine: array[10] of Text[100];
         TextLineIdx: Integer;
         ParamDropWorkDescription: Boolean;
+        EANNr: Code[14];   //HBK - ITB - 100122
         //LanguageCaption
         NoCaptionLbl: TextConst DAN = 'Nummer', DEU = 'Artikel', ENU = 'No.';
         DescriptionCaptionLbl: TextConst DAN = 'Beskrivelse', DEU = 'Beschreibung', ENU = 'Description';
