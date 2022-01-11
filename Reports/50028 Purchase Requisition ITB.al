@@ -490,7 +490,7 @@ report 50028 "Purchase Requisition ITB"
                         column(No_PurchLine; PurchaseLineNo)
                         {
                         }
-                        //HBK - ITB//
+                        //HBK - ITB////
                         column(EANNr; EANNr)
                         {
                         }
@@ -1548,7 +1548,8 @@ report 50028 "Purchase Requisition ITB"
         PrepmtInvBufGLAccNoCaptionLbl: TextConst DAN = 'Finanskontonr.', ENU = 'G/L Account No.';
         PrepaymentSpecCaptionLbl: TextConst DAN = 'Forudbetalingsspecifikation', ENU = 'Prepayment Specification';
         PrepymtVATAmtSpecCaptionLbl: TextConst DAN = 'Specifikation af momsbeløb til forudbetaling', ENU = 'Prepayment VAT Amount Specification';
-        AmountCaptionLbl: TextConst DAN = 'Beløb', ENU = 'Amount';
+        //110122 AmountCaptionLbl: TextConst DAN = 'Beløb', ENU = 'Amount';
+        AmountCaptionLbl: TextConst DAN = 'Amount in EUR', ENU = 'Amount in EUR';
         PurchLineInvDiscAmtCaptionLbl: TextConst DAN = 'Fakturarabatbeløb', ENU = 'Invoice Discount Amount';
         SubtotalCaptionLbl: TextConst DAN = 'Subtotal', ENU = 'Subtotal';
         VATAmtLineVATCaptionLbl: TextConst DAN = 'Momspct.', ENU = 'VAT %';
@@ -1572,7 +1573,8 @@ report 50028 "Purchase Requisition ITB"
         CurrencyCodeLbl: TextConst DAN = 'Valuta', DEU = 'Währung', ENU = 'Currency';
         TotalExclVATTextLbl: TextConst DAN = 'Momsgrundlag', DEU = 'MwSt. Grundlage', ENU = 'VAT Base';
         TotalInclVATTextLbl: TextConst DAN = 'Total beløb', ENU = 'Total Amount';
-        QtyCaptionLbl: TextConst DAN = 'Antal', DEU = 'Menge', ENU = 'Qty';
+        //110122 QtyCaptionLbl: TextConst DAN = 'Antal', DEU = 'Menge', ENU = 'Qty';
+        QtyCaptionLbl: TextConst DAN = 'Qty', DEU = 'Qty', ENU = 'Qty';
         PurchaseLineNo: Text[20];
         "//ITB.04": Integer;
         Item: Record "Item";
@@ -1606,8 +1608,10 @@ report 50028 "Purchase Requisition ITB"
         ParamDropWorkDescription: Boolean;
         EANNr: Code[14];   //HBK - ITB - 100122
         //LanguageCaption
-        NoCaptionLbl: TextConst DAN = 'Nummer', DEU = 'Artikel', ENU = 'No.';
-        DescriptionCaptionLbl: TextConst DAN = 'Beskrivelse', DEU = 'Beschreibung', ENU = 'Description';
+        //110122 NoCaptionLbl: TextConst DAN = 'Nummer', DEU = 'Artikel', ENU = 'No.';
+        NoCaptionLbl: TextConst DAN = 'Article no.', DEU = 'Article no.', ENU = 'Article no.';
+        //110122 DescriptionCaptionLbl: TextConst DAN = 'Beskrivelse', DEU = 'Beschreibung', ENU = 'Description';
+        DescriptionCaptionLbl: TextConst DAN = 'Name', DEU = 'Name', ENU = 'Name';
 
         VariantCaption: TextConst DAN = 'Variant', DEU = 'Variante', ENU = 'Variant';
 
