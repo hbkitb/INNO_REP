@@ -498,6 +498,10 @@ report 50023 "Sales - Shipment ITB"
                         column(PlacCopy_SalesShptLineCaption; PlacCopyCaptionLbl)
                         {
                         }
+                        column(IsService; IsService)  //HBK / ITB - 140122
+                        {
+                        }
+
                         //HBK / ITB - 211221                          
 
 
@@ -594,6 +598,14 @@ report 50023 "Sales - Shipment ITB"
                         trigger OnAfterGetRecord();
                         begin
 
+                            //HBK / ITB - 140122
+                            IsService := false;
+                            CLEAR(ItemService);
+                            IF Type = Type::Item THEN
+                                IF ItemService.GET("No.") THEN
+                                    if ItemService.Type = ItemService.Type::Service then
+                                        IsService := true;
+                            //HBK / ITB - 140122
 
                             LinNo := "Line No.";
                             IF NOT ShowCorrectionLines AND Correction THEN
@@ -1332,6 +1344,10 @@ report 50023 "Sales - Shipment ITB"
 
         Customer: Record "Customer";
         MessageLineNo: Integer;
+        //HBK / ITB - 140122
+        ItemService: Record Item;
+        IsService: Boolean;
+        //HBK / ITB - 140122
 
         SellToAddr: array[8] of Text[50];
         InvoiceAddrCaption: TextConst DAN = 'Faktureringsadresse', DEU = 'Rechnungsadresse ', ENU = 'Invoice Address';
