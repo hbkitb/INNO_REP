@@ -6321,7 +6321,7 @@ Code.GetData(12,3))</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.GetData(70,1)</Value>
+                      <Value>="Pakkenr.:" + First(Fields!PackingNo.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -6338,6 +6338,9 @@ Code.GetData(12,3))</Value>
               <Height>11.5pt</Height>
               <Width>8.65606cm</Width>
               <ZIndex>11</ZIndex>
+              <Visibility>
+                <Hidden>=First(Fields!PackingNo.Value, "DataSet_Result")=""</Hidden>
+              </Visibility>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -7757,6 +7760,9 @@ End Function</Code>
         </Field>
         <Field Name="CustEAN">
           <DataField>CustEAN</DataField>
+        </Field>
+        <Field Name="PackingNo">
+          <DataField>PackingNo</DataField>
         </Field>
         <Field Name="DimText">
           <DataField>DimText</DataField>

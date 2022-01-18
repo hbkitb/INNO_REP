@@ -523,11 +523,16 @@ report 50020 "Sales - Invoice ITB"
                     column(PaymentTermLines2; PaymentTermLines[2])
                     {
                     }
-                    //0701222 - HBK
+                    //0701222 - HBK 
                     column(CustEAN; CustEAN)
                     {
                     }
                     //070122 - HBK
+                    //1801222 - HBK
+                    column(PackingNo; "Sales Invoice Header"."Package Tracking No.")
+                    {
+                    }
+                    //180122 - HBK                    
 
                     dataitem(DimensionLoop1; Integer)
                     {
