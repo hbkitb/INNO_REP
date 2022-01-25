@@ -2932,67 +2932,67 @@
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine1.Value = "" OR Fields!DropItemNoColumn.Value = true</Hidden>
+                                          <Hidden>=Fields!TextLine1.Value = "" OR Fields!DropItemNoColumn.Value = true OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine2.Value = "" OR Fields!DropItemNoColumn.Value = true</Hidden>
+                                          <Hidden>=Fields!TextLine2.Value = "" OR Fields!DropItemNoColumn.Value = true OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine3.Value = "" OR Fields!DropItemNoColumn.Value = true</Hidden>
+                                          <Hidden>=Fields!TextLine3.Value = "" OR Fields!DropItemNoColumn.Value = true OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine4.Value = "" OR Fields!DropItemNoColumn.Value = true</Hidden>
+                                          <Hidden>=Fields!TextLine4.Value = "" OR Fields!DropItemNoColumn.Value = true OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine5.Value = "" OR Fields!DropItemNoColumn.Value = true</Hidden>
+                                          <Hidden>=Fields!TextLine5.Value = "" OR Fields!DropItemNoColumn.Value = true OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Iif(Fields!Type_SalesShptLine.Value = "0", false, true) OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=Iif(Fields!Type_SalesShptLine.Value = "0", false, true) OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=IIF(Fields!Type_SalesShptLine.Value = "2" OR Fields!Type_SalesShptLine.Value = "4" OR Fields!Type_SalesShptLine.Value = "1" OR Fields!Type_SalesShptLine.Value = "3",False,True) OR Fields!Qty_SalesShptLine.Value = 0 OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=IIF(Fields!Type_SalesShptLine.Value = "2" OR Fields!Type_SalesShptLine.Value = "4" OR Fields!Type_SalesShptLine.Value = "1" OR Fields!Type_SalesShptLine.Value = "3",False,True) OR Fields!Qty_SalesShptLine.Value = 0 OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!Description2_SalesShptLine.Value = "" OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=Fields!Description2_SalesShptLine.Value = "" OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine1.Value = "" OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=Fields!TextLine1.Value = "" OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine2.Value = "" OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=Fields!TextLine2.Value = "" OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine3.Value = "" OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=Fields!TextLine3.Value = "" OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine4.Value = "" OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=Fields!TextLine4.Value = "" OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                       <TablixMember>
                                         <Visibility>
-                                          <Hidden>=Fields!TextLine5.Value = "" OR Fields!DropItemNoColumn.Value = false</Hidden>
+                                          <Hidden>=Fields!TextLine5.Value = "" OR Fields!DropItemNoColumn.Value = false OR Fields!IsService.Value = True</Hidden>
                                         </Visibility>
                                       </TablixMember>
                                     </TablixMembers>
