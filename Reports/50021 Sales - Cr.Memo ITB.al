@@ -497,6 +497,11 @@ report 50021 "Sales - Cr.Memo ITB"
                     column(CustomerAddrCaption; CustomerAddrCaption)
                     {
                     }
+                    //220922 - HBK 
+                    column(CustEAN; CustEAN)
+                    {
+                    }
+                    //220922 - HBK                    
 
                     dataitem(DimensionLoop1; Integer)
                     {
@@ -1399,6 +1404,7 @@ report 50021 "Sales - Cr.Memo ITB"
 
                 EANText := 'EAN No.';
 
+                CustEAN := Cust.GLN;  //HBK / ITB - 220922
 
                 IntAccountCodeText := 'Account Code';
 
@@ -1764,6 +1770,7 @@ report 50021 "Sales - Cr.Memo ITB"
         FeeIdx: Integer;
         FeeTab: array[10] of Text[50];
         FeeFound: Boolean;
+        CustEAN: CODE[13];  //HBK / ITB - 220922        
 
         SellToAddr: array[8] of Text[50];
         InvoiceAddrCaption: TextConst DAN = 'Faktureringsadresse', DEU = 'Rechnungsadresse ', ENU = 'Invoice Address';
